@@ -1,11 +1,12 @@
 /**
- * Mapping a function that returns array of ids form a list
- * using map function on the array
- * if the argument is not array,the function is returning an empty array
+ * Retrieves ids from a list of students.
+ * students - in getListStudents or any Array
+ * @returns
  */
+
 export default function getListStudentIds(students) {
-    if ( students instanceof Array) {
-        return students.map((student) => student.id);
-    }
-    return [];
+  if (students instanceof Array) {
+    return students.map((student) => student.id);
+  }
+  return [];
 }
